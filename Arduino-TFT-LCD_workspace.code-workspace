@@ -6,6 +6,10 @@
 		{
 			"name": "Display-Number",
 			"path": "Display-Number"
+		},
+		{
+			"name": "DHT11-TFTLCD-ILI9341",
+			"path": "DHT11-TFTLCD-ILI9341"
 		}
 	],
 	"settings": {}

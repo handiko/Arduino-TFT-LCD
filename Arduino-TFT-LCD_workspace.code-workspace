@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "First Test"
+		},
+		{
+			"name": "Display-Number",
+			"path": "Display-Number"
 		}
 	],
 	"settings": {}

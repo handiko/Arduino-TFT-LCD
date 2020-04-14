@@ -23,11 +23,11 @@ TFT DISPLAY PINS          ARDUINO PINS
     MISO                      --
 */
 
-#define TFT_CS 9
-#define TFT_RST 7
-#define TFT_DC 8
-#define TFT_MOSI 11
-#define TFT_SCLK 13
+#define TFT_CS 0
+#define TFT_RST 13
+#define TFT_DC 2
+#define TFT_MOSI 14
+#define TFT_SCLK 12
 #define TFT_MISO -1
 
 Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_RST, TFT_MISO);
@@ -40,7 +40,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_
 #include <DHT.h>
 #include <DHT_U.h>
 
-DHT dht11(2, DHT11, 1);
+// DHT data pin = IO4 --> 4
+DHT dht11(4, DHT11, 1);
 
 float last_temp, last_hum, last_hi;
 float temp, hum, hi;

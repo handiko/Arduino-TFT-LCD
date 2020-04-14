@@ -40,6 +40,8 @@ Adafruit_ILI9341 tft = Adafruit_ILI9341(TFT_CS, TFT_DC, TFT_MOSI, TFT_SCLK, TFT_
 #include <DHT.h>
 #include <DHT_U.h>
 
+#define DHT11 11
+
 // DHT data pin = IO4 --> 4
 DHT dht11(4, DHT11, 1);
 
